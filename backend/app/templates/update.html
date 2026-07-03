@@ -1,0 +1,15 @@
+<form method="post">
+    <h3>Employee Details</h3>
+    {% csrf_token %}
+    Employee Id: <input type="text" name="Employee_id" value="{{emp_1.Employee_id}}"> <br><br>
+    Name: <input type="text" name="Name" value="{{emp_1.Name}}"> <br><br>
+    Department: <input type="text" name="Department" value="{{emp_1.Department}}"> <br><br>
+    Salary: <input type="text" name="Salary" value="{{emp_1.Salary}}"> <br><br>
+    Phone: <input type="text" name="Phone" value="{{emp_1.Phone}}"> <br><br>
+    Email: <input type="email" name="Email" value="{{emp_1.Email}}"> <br><br>
+    Address: <input type="text" name="Address" value="{{emp_1.Address}}"> <br><br>
+    Joining_date:<input type="date" name="Joining_date" value="{{ emp_1.Joining_date|date:'Y-m-d' }}"> <br><br>
+    Status: <input type="text" name="Status" value="{{emp_1.Status}}"> <br><br>
+    <button type="submit">Update</button>
+
+</form>
